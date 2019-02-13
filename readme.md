@@ -1,4 +1,4 @@
-![](frontend/src/assets/logolarge.jpg)
+![](Frontend/src/assets/logolarge.jpg)
 
 A virtual assistant that helps you remember people that you know and things you have to do by providing non-invasive cues through an intelligent voice interface.
 
