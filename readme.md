@@ -1,5 +1,6 @@
 ![](frontend/src/assets/logolarge.jpg)
 
+# ALS Helper
 A virtual assistant that helps you remember people that you know and things you have to do by providing non-invasive cues through an intelligent voice interface.
 
 # How I built it
