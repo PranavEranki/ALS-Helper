@@ -1,0 +1,101 @@
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title animated fadeIn">
+        Relationships
+      </h1>
+      <h2 class="subtitle animated fadeIn delay-1s">
+        Manage the faces that stand out to you.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section animated fadeIn delay-2s">
+  <div class="columns is-multiline">
+    <div class="column is-one-quarter" *ngFor="let face of users | async">
+
+      <a role="button" (click)="modal.classList.toggle('is-active')">
+        <div class="card">
+          <div class="card-image" *ngIf="face.imgUrls">
+            <figure class="image is-1by1">
+              <img [src]="face.imgUrls[Object.keys(face.imgUrls)[0]]" alt="{{face.name}}'s face">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">{{face.name}}</p>
+                <p class="subtitle is-6">{{face.userData}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="modal animated fadeIn" #modal>
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">{{face.name}}</p>
+          </header>
+          <section class="modal-card-body">
+            {{face.additionalMsg}}
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button" (click)="modal.classList.toggle('is-active')">Close</button>
+            <button class="button is-danger" (click)="send_delete(face); modal.classList.toggle('is-active')">Delete
+            </button>
+          </footer>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<a class="button is-medium add-button is-primary" role="button" (click)="newmodal.classList.toggle('is-active')">
+  <span class="icon">
+    <i class="fas fa-plus"></i>
+  </span>
+</a>
+
+<div class="modal animated fadeIn" #newmodal>
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Add new face...</p>
+    </header>
+    <section class="modal-card-body">
+      <input class="input" type="text" placeholder="Name" required #name>
+      <input class="input" type="text" placeholder="Relation" required #relation>
+      <textarea class="textarea" placeholder="Additional Notes" #notes></textarea>
+      Take a picture of the face!
+      <div class="file has-name">
+        <label class="file-label">
+          <input class="file-input" type="file" name="image" accept="image/*" capture="environment"
+                 (change)="filename.innerHTML = file.files[0].name;" #file required>
+          <span class="file-cta">
+          <span class="file-icon">
+            <i class="fas fa-upload"></i>
+          </span>
+          <span class="file-label">
+            Choose an image…
+          </span>
+          </span>
+          <span class="file-name" #filename>
+            ...
+          </span>
+        </label>
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button" (click)="newmodal.classList.toggle('is-active')">Cancel</button>
+      <button class="button is-success"
+              (click)="new_face(name.value, relation.value, notes.value, file.files[0]);
+              newmodal.classList.toggle('is-active')">
+        Create
+      </button>
+    </footer>
+  </div>
+</div>

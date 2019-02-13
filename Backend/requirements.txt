@@ -1,0 +1,10 @@
+flask
+flask-bootstrap
+jsonify
+pybase64
+cognitive_face
+pillow
+glob3
+firebase-admin
+google-cloud-storage
+flask-cors

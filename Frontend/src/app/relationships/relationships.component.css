@@ -1,0 +1,25 @@
+.add-button {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+}
+
+.image img {
+  object-fit: cover !important;
+}
+
+.input {
+  margin-bottom: 4px;
+}
+
+.textarea {
+  margin-bottom: 8px;
+}
+
+.modal {
+  z-index: 100;
+}
+
+.card {
+  z-index: 0;
+}
