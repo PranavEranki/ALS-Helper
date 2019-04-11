@@ -28,10 +28,3 @@ We learned how to use the Microsoft Azure Face API, storing data into the realti
 ## What's next for ALS-Helper
 
 We would like to allow a user to benefit from our app with a mobile device. Being able to incorporate the hardware into a smaller more discrete device, like glasses and an earpiece, is also a future goal. 
-
-## Contributors
-- [EgyptAmaru](https://github.com/EgyptAmaru)
-- [sdulaney](https://github.com/sdulaney)
-- [trfoss](https://github.com/trfoss)
-- [tejashah88](https://github.com/tejashah88)
-- [mommothazaz123](https://github.com/mommothazaz123)
