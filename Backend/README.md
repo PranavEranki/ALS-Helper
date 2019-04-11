@@ -1,8 +1,3 @@
-# iris-backend
-
-[![Devpost | Iris](https://badges.devpost-shields.com/get-badge?name=Iris&id=iris-io&type=big-logo&style=flat)](https://devpost.com/software/iris-io)
-
-![Iris Screenshots](https://www.stewartdulaney.com/wp-content/uploads/sites/7/2019/01/iris.gif "Iris")
 
 ## Inspiration
 
@@ -10,7 +5,7 @@ We had the idea to use machine learning in order to solve a common problem for p
 
 ## What it does
 
-Iris is a virtual assistant (and wearable device) that helps you remember people that you know and things you have to do by providing non-invasive cues through an intelligent voice interface.
+ALS-Helper is a virtual assistant (and wearable device) that helps you remember people that you know and things you have to do by providing non-invasive cues through an intelligent voice interface.
 
 ## How we built it
 
@@ -30,17 +25,9 @@ The final product looks amazing and we're extremely proud to present a web app i
 
 We learned how to use the Microsoft Azure Face API, storing data into the realtime database, and images into Google Cloud Storage. We also learned how to perform realtime data updates on a web app using firebase. 
 
-## What's next for Iris.io
+## What's next for ALS-Helper
 
 We would like to allow a user to benefit from our app with a mobile device. Being able to incorporate the hardware into a smaller more discrete device, like glasses and an earpiece, is also a future goal. 
-
-## Check it out
-- [http://irisassist.org/](http://irisassist.org/)
-- [https://devpost.com/software/iris-io](https://devpost.com/software/iris-io)
-- [https://github.com/CruzHacks2019/iris-backend](https://github.com/CruzHacks2019/iris-backend)
-- [https://github.com/CruzHacks2019/iris-frontend](https://github.com/CruzHacks2019/iris-frontend)
-- [https://github.com/CruzHacks2019/iris-raspi](https://github.com/CruzHacks2019/iris-raspi)
-- [https://www.youtube.com/watch?v=bZMzjwBbdrw](https://www.youtube.com/watch?v=bZMzjwBbdrw)
 
 ## Contributors
 - [EgyptAmaru](https://github.com/EgyptAmaru)
