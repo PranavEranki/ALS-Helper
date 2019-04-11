@@ -4,7 +4,7 @@
 A virtual assistant that helps you remember people that you know and things you have to do by providing non-invasive cues through an intelligent voice interface.
 
 # How I built it
-I used a *Flask app* as the back end, and an *Angular app* as the front end. I used the *Microsoft Azure Face API* for facial recognition as well as an abundance of *Google Cloud Platform services* to support our application: including *Google Compute Engine, Google App Engine, Firebase Realtime Database, Google Cloud Storage, and Google Cloud Text-to-Speech*.
+I used an *Angular app* for the front end UI and a *Flask app* for the backend. I used facial recognition from the *Microsoft Azure Face API*. From Google, I utilized *Google Compute Engine, Google App Engine, Firebase Realtime Database, Google Cloud Storage, and Google Cloud Text-to-Speech*.
 
 *Note*
 
